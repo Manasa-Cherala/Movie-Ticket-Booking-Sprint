@@ -10,7 +10,8 @@ import java.util.List;
 @Service
 public class TheatreService implements ITheatreService {
 
-    private final TheatreRepository theatreRepository;
+    @Autowired
+    TheatreRepository theatreRepository;
 
     public TheatreService(TheatreRepository theatreRepository) {
         this.theatreRepository = theatreRepository;
