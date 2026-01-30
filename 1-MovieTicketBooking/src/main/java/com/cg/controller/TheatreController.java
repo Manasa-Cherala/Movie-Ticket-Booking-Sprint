@@ -9,7 +9,8 @@ import org.springframework.web.bind.annotation.*;
 @Controller
 public class TheatreController {
 
-    private final TheatreService theatreService;
+    @Autowired
+    TheatreService theatreService;
 
     public TheatreController(TheatreService theatreService) {
         this.theatreService = theatreService;
