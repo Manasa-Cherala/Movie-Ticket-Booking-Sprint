@@ -11,7 +11,7 @@ https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	</parent>
 
 	<groupId>com.cg</groupId>
-	<artifactId>04-springboot-Product</artifactId>
+	<artifactId>1-MovieTicketBooking</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>100-springboot-hello</name>
 
