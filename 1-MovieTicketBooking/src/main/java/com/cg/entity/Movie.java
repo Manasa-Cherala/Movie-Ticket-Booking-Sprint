@@ -43,23 +43,7 @@ public class Movie {
 			this.shows = shows;
 		}
 	    
-	    public Movie() {
-	    	
-	    }
-	    
-	    
-	    public Movie(Long movieId, String movieName, String genre, String language, int duration, String description,
-				double rating, List<Show> shows) {
-			super();
-			this.movieId = movieId;
-			this.movieName = movieName;
-			this.genre = genre;
-			this.language = language;
-			this.duration = duration;
-			this.description = description;
-			this.rating = rating;
-			this.shows = shows;
-		}
+	   
 		
 	    
 		public Long getMovieId() {
