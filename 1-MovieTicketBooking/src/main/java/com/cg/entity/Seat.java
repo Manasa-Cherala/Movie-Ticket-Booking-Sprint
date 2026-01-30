@@ -78,6 +78,22 @@ public class Seat {
 	public void setShow(Show show) {
 		this.show = show;
 	}
+
+	public Seat(Long seatId, String seatNumber, String seatRow, String seatType, double seatPrice, boolean isBooked,
+			Show show) {
+		super();
+		this.seatId = seatId;
+		this.seatNumber = seatNumber;
+		this.seatRow = seatRow;
+		this.seatType = seatType;
+		this.seatPrice = seatPrice;
+		this.isBooked = isBooked;
+		this.show = show;
+	}
+
+	public Seat() {
+		super();
+	}
 	
 	
 	
