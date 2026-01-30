@@ -12,7 +12,7 @@ import com.cg.service.MovieService;
 @Controller
 public class MovieController {
     @Autowired
-    private MovieService movieService;
+    MovieService movieService;
 
     @GetMapping("/")
     public String home(Model model, @RequestParam(value = "search", required = false) String search) {
