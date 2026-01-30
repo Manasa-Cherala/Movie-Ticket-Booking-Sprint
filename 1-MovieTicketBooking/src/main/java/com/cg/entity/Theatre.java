@@ -10,6 +10,7 @@ public class Theatre {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long theatreId;
  
+    @Column(nullable = false, length = 100)
     private String theatreName;
     private String location;
     private String city;
