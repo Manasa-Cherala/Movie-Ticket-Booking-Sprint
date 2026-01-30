@@ -1,15 +1,15 @@
 package com.cg.service;
 
 import java.util.List;
-
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.cg.entity.Movie;
 import com.cg.repository.MovieReposistory;
 @Service
 public class MovieService implements IMovieService {
-	
-	private MovieReposistory moviereposistory;
+	@Autowired
+	 MovieReposistory moviereposistory;
 	
 	 public List<Movie> getAllMovies(){
 		 return moviereposistory.findAll(); }
