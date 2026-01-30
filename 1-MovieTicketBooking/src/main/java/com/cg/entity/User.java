@@ -17,14 +17,35 @@ public class User {
     private String password;
  
     @Enumerated(EnumType.STRING)
-    private Role role;   // ADMIN or USER
+    private String role;   // ADMIN or USER
  
     private String phoneNumber;
     private boolean enabled;
  
     @OneToMany(mappedBy = "user")
     private List<Booking> bookings;
+    
+    
 
+	public User() {
+		super();
+	}
+
+
+	public User(Long userId, String username, String email, String password, String role, String phoneNumber,
+			boolean enabled, List<Booking> bookings) {
+		super();
+		this.userId = userId;
+		this.username = username;
+		this.email = email;
+		this.password = password;
+		this.role = role;
+		this.phoneNumber = phoneNumber;
+		this.enabled = enabled;
+		this.bookings = bookings;
+	}
+
+	
 	public Long getUserId() {
 		return userId;
 	}
@@ -57,11 +78,11 @@ public class User {
 		this.password = password;
 	}
 
-	public Role getRole() {
+	public String getRole() {
 		return role;
 	}
 
-	public void setRole(Role role) {
+	public void setRole(String role) {
 		this.role = role;
 	}
 
