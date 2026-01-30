@@ -1,0 +1,21 @@
+package com.cg.entity;
+@Entity
+public class Booking {
+	@Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long bookingId;
+ 
+    private LocalDate bookingDate;
+    private double totalAmount;
+    private String paymentStatus;
+    private String bookingStatus;
+ 
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
+ 
+    @ManyToOne
+    @JoinColumn(name = "show_id")
+    private Show show;
+
+}
