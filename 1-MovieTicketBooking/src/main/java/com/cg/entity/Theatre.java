@@ -1,9 +1,11 @@
 package com.cg.entity;
 
 import jakarta.persistence.*;
+import jakarta.persistence.Table;
 import java.util.List;
  
 @Entity
+@Table
 public class Theatre {
  
     @Id
